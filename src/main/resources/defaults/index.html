@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+	<!-- -->
+	<link rel="shortcut icon" href="assets/raccoonvpn/raccoon.ico" type="image/x-icon">
+	<!-- -->
+	<script src="scripts/raccoonvpn/sha256.min.js"></script>
+	<script src="scripts/raccoonvpn/jquery.min.js"></script>
+	<script src="scripts/raccoonvpn/vars.js"></script>
+	<script src="scripts/raccoonvpn/script.js"></script>
+	<script src="scripts/raccoonvpn/alerts.js"></script>
+	<script src="scripts/raccoonvpn/API.js"></script>
+	<!-- -->
+	<script src="scripts/raccoonvpn/login.js"></script>
+	<!-- -->
+	<!-- <script src="scriptButtons.js"></script> -->
+	<link href="assets/raccoonvpn/dist/css/styleButtons.css" rel="stylesheet">
+	<!-- -->
+	<link href="assets/raccoonvpn/dist/css/alerts.css" rel="stylesheet">
+	<!-- -->
+    <title>RaccoonVPN | Вход</title>
+    <!-- Bootstrap core CSS -->
+	<link href="assets/raccoonvpn/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+	  #regButton {
+		margin-top: 7px;
+	  }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="assets/raccoonvpn/dist/css/signin.css" rel="stylesheet">	
+  </head>
+  <body class="text-center">
+    
+<main class="form-signin">
+  <form action="javascript:void(0);">
+    <img class="mb-4" src="assets/raccoonvpn/dist/logo/raccoon256.svg" alt="" height="80">
+    <h1 class="h3 mb-3 fw-normal">Пожалуйста, войдите</h1>
+
+    <div class="form-floating">
+      <input type="text" required minlength="3" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Почта или логин</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" required minlength="6" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Пароль</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input id="rememberMeCheckbox" type="checkbox" value="remember-me"> Запомнить меня
+      </label>
+    </div>
+	<div class="btn-group-vertical" role="group" aria-label="btngroup1">
+		<button id="submitLogin" type="submit" class="ladda-button blue contract-overlay btn btn-lg btn-primary" style="z-index: 10;"><span class="label">Вход</span> <span class="spinner"></span></button>
+		<button id="regButton" onclick="window.location.href='register.html'" type="button" class="btn btn-outline-secondary btn-lg px-5">Регистрация</button>
+	</div>
+	<footer class="footer">
+        <div class="container">
+            <span class="text-muted">RaccoonVPN by petya136900 | 2021</span>
+            <br>
+            <span id="serverMessage" class="text-muted"></span>
+        </div>
+    </footer>
+  </form>
+</main>
+  </body>
+</html>

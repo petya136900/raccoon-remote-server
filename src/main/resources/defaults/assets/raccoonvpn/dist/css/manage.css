@@ -1,0 +1,197 @@
+@font-face {
+	font-family: 'Font Awesome 5 Free Solid';
+	src: url('fa-solid-900.eot');
+	src: local('Graublau Web Regular'), local('Font Awesome 5 Free Solid'),
+		url("fa-solid-900.woff") format("woff"),
+		url("fa-solid-900.woff2") format("woff2"),
+		url(fa-solid-900.ttf) format("truetype"),
+		url("fa-solid-900.svg#grablau") format("svg");
+}
+
+@font-face {
+	font-family: "Font Awesome 5 Free Solid";
+	src: url(fa-solid-900.ttf) format("truetype");
+}
+
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+@media (min-width: 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+	#content {
+		padding: 7%;
+	}
+}
+
+.raccoon-nav,
+.main-cont {
+	flex-direction: column;
+	align-items: center;
+}
+
+@media(min-width: 526px) {
+
+	.raccoon-nav,
+	.main-cont {
+		flex-direction: row;
+	}
+	#racLogo {
+		margin-right: 40px;
+	}
+}
+
+#userMenu {
+	width: 65px;
+	margin-top: 5px;
+}
+
+.svg-filter-gray {
+	filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
+.fa-user-cog {
+	font-size: 25px;
+	color: #7373da;
+}
+
+#content {
+	padding: 0 10px;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	line-height: 60px;
+	background-color: #f5f5f5;
+	text-align: center;
+    max-height: 60px;
+    transition: max-height 500ms cubic-bezier(0.755, 0.050, 0.855, 0.060);
+}
+footer.footer.server-message {
+    max-height: 160px;
+    transition: max-height 0.25s ease-in;
+}
+#certFiles {
+	display: none;
+}
+.content-view {
+	display: none;
+}
+
+#blockStart {
+	text-align: center;
+}
+
+.refresh {
+	background: #ffffff;
+	padding-left: 15px;
+	color: #0d6efd;
+	border-width: 0px;
+	border-style: none;
+}
+
+.refresh:hover {
+	color: green;
+}
+.fix-bootbox {
+	margin: auto;
+}
+.bootbox-cancel {
+	display: inline-flex;
+}
+
+.headd {
+	
+}
+
+.refresh:active {
+	color: #0d6efd;
+	text-shadow: -1px 1px 1px #9acfff;
+}
+
+#users-table {
+	font-size: 18px;
+}
+
+#userListInner {
+	margin: 0px;
+	padding: 0px;
+}
+
+.uadmin {
+	color: green;
+}
+
+button {
+	min-width: fit-content;
+}
+
+td {
+	vertical-align: middle !important;
+}
+
+.fa {
+	display: contents;
+}
+
+.bootbox-close-button {
+	border-color: #f8f9fa;
+	display: inline-block;
+	font-weight: 400;
+	line-height: 1.5;
+	text-decoration: none;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	border: 1px solid transparent;
+	font-size: 1rem;
+	border-radius: .25rem;
+	-webkit-transition: background-color .1s;
+	background-color: #f9f9f9;
+	color: #7f7f7f;
+	font: inherit;
+	padding: .25rem 0;
+	width: 4rem;
+	margin: .25rem .25rem 0 0;
+	text-align: center;
+}
+
+#modalRules {
+	padding: 15px;
+}
+
+.toggle-rule {
+	margin-top: -2px;
+}
+button {
+	min-width: max-content;
+}
+.btn-r-tgl {
+	min-width: max-content;
+}
+.col-sm-10 {
+	margin: auto;
+}
+.condtype {
+	color: #7373da;
+    font-weight: bold;
+}
+#notes {
+	z-index: 2000;
+}
+td {
+    border-style: solid;
+    border-color: #292b2f;
+}
+#certFiles{
+	max-height: min-content;
+    transition: max-height 0.25s
+}
