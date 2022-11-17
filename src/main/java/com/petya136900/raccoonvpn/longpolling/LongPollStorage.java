@@ -64,7 +64,11 @@ public class LongPollStorage {
 				isTimeout=true;
 				break;
 			}
-			event = syncGetEvent(key,ts+1);
+			if(ts!=-1) {
+				event = syncGetEvent(key,ts+1);
+			} else {
+				event = syncGetEvent(key,-1l);
+			}
 			if((event==null||event.getTs()==ts)&&(ts!=-1)) {
 				try {
 					Thread.sleep(5);
